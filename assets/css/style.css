@@ -398,7 +398,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .time .box-container .box .image{
-    height: 36rem;
+    height: 50rem;
     width: 100%;
     overflow: hidden;
 }
@@ -608,7 +608,7 @@ html::-webkit-scrollbar-thumb{
     
     .time .box-container .box .image img{
         width: 90%;
-        height: 90%;
+        height: 97%;
         object-fit: cover;
     }
 }
