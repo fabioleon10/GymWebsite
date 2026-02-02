@@ -3,326 +3,543 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym/Fitness Website</title>
-    <!-- font awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <!-- css -->
+    <meta name="description" content="Academia moderna com equipamentos de última geração, personal trainers qualificados e planos flexíveis. Transforme sua saúde conosco!">
+    <meta name="keywords" content="academia, fitness, musculação, personal trainer, crossfit, yoga">
+    <title>FitLife - Academia & Fitness</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
-    <!-- header -->
+    <!-- Header -->
+    <header class="header" role="banner">
+        <a href="#home" class="logo" aria-label="FitLife Academia - Página Inicial">
+            <i class="fas fa-dumbbell" aria-hidden="true"></i>
+            <span>FitLife</span>
+        </a>
 
-    <header class="header">
-
-        <a href="#" class="logo"> <i class="fas fa-dumbbell"></i> fitness</a>
-
-        <nav class="navbar">
-            <a href="#home" class="active">home</a>
-            <a href="#sobre">sobre</a>
-            <a href="#servicos">serviços</a>
-            <a href="#planos">planos</a>
-            <a href="#time">time</a>
-            <a href="#cadastro">cadastro</a>
+        <nav class="navbar" role="navigation" aria-label="Menu principal">
+            <a href="#home" class="nav-link active">Início</a>
+            <a href="#sobre" class="nav-link">Sobre</a>
+            <a href="#servicos" class="nav-link">Serviços</a>
+            <a href="#planos" class="nav-link">Planos</a>
+            <a href="#time" class="nav-link">Equipe</a>
+            <a href="#cadastro" class="nav-link">Contato</a>
         </nav>
 
-        <div id="menu" class="fas fa-bars"></div>
-
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
     </header>
 
-    <!-- fim -->
-
-    <!-- home -->
-
-    <section class="home" id="home">
-
-        <div class="content">
-            <h3>melhore <br> <span>sua saúde </span> <br> com a gente</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad commodi nostrum cupiditate rerum
-                repellendus nemo dolor consectetur aspernatur.</p>
-            <a href="#" class="btn"> saiba mais </a>
-        </div>
-
-    </section>
-
-    <!-- fim -->
-
-    <!-- sobre -->
-
-    <section class="sobre" id="sobre">
-
-        <div class="row">
-
-            <div class="content">
-                <span>sobre nós</span>
-                <h3>treinos diários na academia e na sua casa </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum,
-                    soluta quia aspernatur ipsum, amet mollitia molestiae recusandae
-                    ab distinctio blanditiis rem corrupti assumenda nesciunt ratione,
-                    provident harum quidem non excepturi?</p>
-                <ul>
-                    <li> <i class="far fa-check-square"></i> como cuidar do seu sistema imunológico </li>
-                    <li> <i class="far fa-check-square"></i> um guia para desafios de condicionamento físico e treino de 30 dias</li>
-                    <li> <i class="far fa-check-square"></i> guia para aliviar suas dores na academia </li>
-                    <li> <i class="far fa-check-square"></i>os benefícios para a saúde mental do exercício em casa </li>
-                </ul>
-                <a href="#" class="btn">leia mais</a>
-            </div>
-
-            <div class="image">
-                <img src="./assets/images/about.jpg" alt="">
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- fim -->
-
-    <!-- servicos -->
-
-    <section class="servicos" id="servicos">
-
-        <h1 class="heading">serviços</h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <img src="./assets/images/service1.jpg" alt="">
-                <div class="content">
-                    <h3>musculação</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem.</p>
-                    <a href="#" class="btn">read more</a>
+    <!-- Hero Section -->
+    <main>
+        <section class="hero" id="home" role="main">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Transforme <br>
+                    <span class="highlight">sua vida</span> <br>
+                    conosco
+                </h1>
+                <p class="hero-description">
+                    Descubra o melhor de você com equipamentos de última geração, 
+                    treinadores especializados e um ambiente motivador. 
+                    Sua jornada fitness começa aqui!
+                </p>
+                <div class="hero-actions">
+                    <a href="#planos" class="btn btn-primary">Escolher Plano</a>
+                    <a href="#sobre" class="btn btn-outline">Conhecer Mais</a>
                 </div>
             </div>
-
-            <div class="box">
-                <img src="./assets/images/service2.jpg" alt="">
-                <div class="content">
-                    <h3>Cárdio</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem.</p>
-                    <a href="#" class="btn">read more</a>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Anos de experiência</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Alunos transformados</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">Academia aberta</span>
                 </div>
             </div>
+        </section>
 
-            <div class="box">
-                <img src="./assets/images/service3.jpg" alt="">
-                <div class="content">
-                    <h3>yoga</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
+        <!-- Sobre Section -->
+        <section class="about" id="sobre">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <span class="section-subtitle">Sobre a FitLife</span>
+                        <h2 class="section-title">Mais que uma academia, um estilo de vida</h2>
+                        <p class="about-description">
+                            Na FitLife, acreditamos que fitness vai além dos exercícios. 
+                            Oferecemos uma experiência completa com equipamentos modernos, 
+                            ambiente acolhedor e profissionais dedicados ao seu sucesso.
+                        </p>
+                        <ul class="benefits-list">
+                            <li>
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span>Equipamentos de última geração</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span>Personal trainers certificados</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span>Horário flexível 24 horas</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span>Ambiente climatizado e higienizado</span>
+                            </li>
+                        </ul>
+                        <a href="#servicos" class="btn btn-primary">Nossos Serviços</a>
+                    </div>
 
-            <div class="box">
-                <img src="./assets/images/service4.jpg" alt="">
-                <div class="content">
-                    <h3>aparelhos novos e tecnológicos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="./assets/images/service5.jpg" alt="">
-                <div class="content">
-                    <h3>crossfit</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="./assets/images/service6.jpg" alt="">
-                <div class="content">
-                    <h3>Acompanhamento Profissional </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- fim -->
-
-    <!-- counter -->
-
-    <section class="counter">
-
-        <div class="box-container">
-
-            <div class="box">
-                <h3>201</h3>
-                <p>prêmios</p>
-            </div>
-
-            <div class="box">
-                <h3>150</h3>
-                <p>maquinas</p>
-            </div>
-
-            <div class="box">
-                <h3>119</h3>
-                <p>treinos</p>
-            </div>
-
-            <div class="box">
-                <h3>450</h3>
-                <p>instrutores</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- fim -->
-
-    <!-- planos -->
-
-    <section class="planos" id="planos">
-
-        <h1 class="heading">planos</h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <h3>plano básico</h3>
-                <div class="price"><span>R$ </span>30 <span>/mês</span></div>
-                <h3 class="month">3 meses</h3>
-                <div class="list">
-                    <p><i class="fas fa-check"></i> yoga</p>
-                    <p><i class="fas fa-check"></i> cárdio</p>
-                    <p><i class="fas fa-check"></i> crossfit</p>
-                    <p><i class="fas fa-times"></i> treino</p>
-                    <p><i class="fas fa-times"></i> filiação</p>
-                </div>
-                <a href="#" class="btn">escolher plano</a>
-            </div>
-
-            <div class="box">
-                <h3>plano estendido</h3>
-                <div class="price"><span>R$ </span>60 <span>/mês</span></div>
-                <h3 class="month">6 meses</h3>
-                <div class="list">
-                    <p><i class="fas fa-check"></i> yoga</p>
-                    <p><i class="fas fa-check"></i> cárdio</p>
-                    <p><i class="fas fa-check"></i> crossfit</p>
-                    <p><i class="fas fa-check"></i> treino</p>
-                    <p><i class="fas fa-times"></i> filiação</p>
-                </div>
-                <a href="#" class="btn">escolher plano</a>
-            </div>
-
-            <div class="box">
-                <h3>plano premium</h3>
-                <div class="price"><span>R$ </span>90 <span>/mês</span></div>
-                <h3 class="month">12 meses</h3>
-               <div class="list">
-                   <p><i class="fas fa-check"></i> yoga</p>
-                   <p><i class="fas fa-check"></i> cárdio</p>
-                   <p><i class="fas fa-check"></i> crossfit</p>
-                   <p><i class="fas fa-check"></i> treino</p>
-                   <p><i class="fas fa-times"></i> filiação</p>
-               </div>
-                <a href="#" class="btn">escolher plano</a>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- fim -->
-
-    <!-- time -->
-
-    <section class="time" id="time">
-
-        <h1 class="heading">Time</h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/images/trainer1.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>erica lacy</h3>
-                    <p>Personal Trainer</p>
-                    <div class="share">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
+                    <div class="about-image">
+                        <img src="./assets/images/about.jpg" alt="Academia FitLife com equipamentos modernos" loading="lazy">
+                        <div class="experience-badge">
+                            <span class="badge-number">5+</span>
+                            <span class="badge-text">Anos transformando vidas</span>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/images/trainer2.png" alt="">
+        <!-- Serviços Section -->
+        <section class="services" id="servicos">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-subtitle">Nossos Serviços</span>
+                    <h2 class="section-title">Tudo que você precisa em um só lugar</h2>
+                </header>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img src="./assets/images/service1.jpg" alt="Área de musculação com equipamentos modernos" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3>Musculação</h3>
+                            <p>Equipamentos de última geração para todos os grupos musculares, com acompanhamento profissional.</p>
+                            <a href="#cadastro" class="btn btn-outline">Saiba Mais</a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img src="./assets/images/service2.jpg" alt="Área de exercícios cardiovasculares" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3>Cardio</h3>
+                            <p>Esteiras, bikes e equipamentos cardiovasculares para melhorar sua resistência e queimar calorias.</p>
+                            <a href="#cadastro" class="btn btn-outline">Saiba Mais</a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img src="./assets/images/service3.jpg" alt="Sala de yoga e pilates" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3>Yoga & Pilates</h3>
+                            <p>Aulas em grupo para flexibilidade, equilíbrio e bem-estar mental com instrutores qualificados.</p>
+                            <a href="#cadastro" class="btn btn-outline">Saiba Mais</a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img src="./assets/images/service4.jpg" alt="Equipamentos tecnológicos da academia" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3>Tecnologia Avançada</h3>
+                            <p>Equipamentos inteligentes com monitoramento de performance e aplicativo exclusivo.</p>
+                            <a href="#cadastro" class="btn btn-outline">Saiba Mais</a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img src="./assets/images/service5.jpg" alt="Área de crossfit e treinamento funcional" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3>CrossFit</h3>
+                            <p>Treinamento funcional intensivo em grupos para máximos resultados e motivação.</p>
+                            <a href="#cadastro" class="btn btn-outline">Saiba Mais</a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img src="./assets/images/service6.jpg" alt="Personal trainer acompanhando aluno" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3>Personal Training</h3>
+                            <p>Acompanhamento individualizado com personal trainers certificados para resultados rápidos.</p>
+                            <a href="#cadastro" class="btn btn-outline">Saiba Mais</a>
+                        </div>
+                    </article>
                 </div>
-                <div class="content">
-                    <h3>dev lacy</h3>
-                    <p>personal trainer</p>
-                    <div class="share">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
+            </div>
+        </section>
+
+        <!-- Estatísticas Section -->
+        <section class="stats" aria-label="Estatísticas da academia">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="stat-number" data-target="150">0</h3>
+                        <p class="stat-label">Prêmios Conquistados</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-dumbbell" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="stat-number" data-target="200">0</h3>
+                        <p class="stat-label">Equipamentos Modernos</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="stat-number" data-target="1000">0</h3>
+                        <p class="stat-label">Alunos Ativos</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-user-tie" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="stat-number" data-target="25">0</h3>
+                        <p class="stat-label">Personal Trainers</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/images/trainer3.png" alt="">
+        <!-- Planos Section -->
+        <section class="pricing" id="planos">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-subtitle">Nossos Planos</span>
+                    <h2 class="section-title">Escolha o plano ideal para você</h2>
+                </header>
+
+                <div class="pricing-grid">
+                    <article class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Plano Básico</h3>
+                            <div class="plan-price">
+                                <span class="currency">R$</span>
+                                <span class="amount">89</span>
+                                <span class="period">/mês</span>
+                            </div>
+                            <p class="plan-duration">Compromisso de 6 meses</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li class="feature included">
+                                <i class="fas fa-check" aria-hidden="true"></i>
+                                <span>Acesso à área de musculação</span>
+                            </li>
+                            <li class="feature included">
+                                <i class="fas fa-check" aria-hidden="true"></i>
+                                <span>Exercícios cardiovasculares</span>
+                            </li>
+                            <li class="feature included">
+                                <i class="fas fa-check" aria-hidden="true"></i>
+                                <span>Vestiarios e armarios</span>
+                            </li>
+                            <li class="feature not-included">
+                                <i class="fas fa-times" aria-hidden="true"></i>
+                                <span>Aulas em grupo</span>
+                            </li>
+                            <li class="feature not-included">
+                                <i class="fas fa-times" aria-hidden="true"></i>
+                                <span>Personal trainer</span>
+                            </li>
+                        </ul>
+                        <a href="#cadastro" class="btn btn-outline">Escolher Plano</a>
+                    </article>
+
+                    <article class="pricing-card featured">
+                        <div class="popular-badge">Mais Popular</div>
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Plano Premium</h3>
+                            <div class="plan-price">
+                                <span class="currency">R$</span>
+                                <span class="amount">149</span>
+                                <span class="period">/mês</span>
+                            </div>
+                            <p class="plan-duration">Compromisso de 12 meses</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li class="feature included">
+                                <i class="fas fa-check" aria-hidden="true"></i>
+                                <span>Todos os benefícios do Básico</span>
+                            </li>
+                            <li class="feature included">
+                                <i class="fas fa-check" aria-hidden="true"></i>
+                                <span>Aulas em grupo ilimitadas</span>
+                            </li>
+                            <li class="feature included">
+                                <i class="fas fa-check" aria-hidden="true"></i>
+                                <span>Acesso 24 horas</span>
+                            </li>
+                            <li class="feature included">
+                                <i class="fas fa-check" aria-hidden="true"></i>
+                                <span>2 sessões de personal trainer</span>
+                            </li>
+                            <li class="feature included">
+                                <i class="fas fa-check" aria-hidden="true"></i>
+                                <span>Suplementação nutricional</span>
+                            </li>
+                        </ul>
+                        <a href="#cadastro" class="btn btn-primary">Escolher Plano</a>
+                    </article>
+
+                    <article class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Plano VIP</h3>
+                            <div class="plan-price">
+                                <span class="currency">R$</span>
+                                <span class="amount">249</span>
+                                <span class="period">/mês</span>
+                            </div>
+                            <p class="plan-duration">Sem compromisso</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li class="feature included">
+                                <i class="fas fa-check" aria-hidden="true"></i>
+                                <span>Todos os benefícios do Premium</span>
+                            </li>
+                            <li class="feature included">
+                                <i class="fas fa-check" aria-hidden="true"></i>
+                                <span>Personal trainer ilimitado</span>
+                            </li>
+                            <li class="feature included">
+                                <i class="fas fa-check" aria-hidden="true"></i>
+                                <span>Avaliação física mensal</span>
+                            </li>
+                            <li class="feature included">
+                                <i class="fas fa-check" aria-hidden="true"></i>
+                                <span>Plano nutricional personalizado</span>
+                            </li>
+                            <li class="feature included">
+                                <i class="fas fa-check" aria-hidden="true"></i>
+                                <span>Acesso a todas as unidades</span>
+                            </li>
+                        </ul>
+                        <a href="#cadastro" class="btn btn-outline">Escolher Plano</a>
+                    </article>
                 </div>
-                <div class="content">
-                    <h3>john lacy</h3>
-                    <p>personal trainer</p>
-                    <div class="share">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
+            </div>
+        </section>
+
+        <!-- Equipe Section -->
+        <section class="team" id="time">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-subtitle">Nossa Equipe</span>
+                    <h2 class="section-title">Profissionais dedicados ao seu sucesso</h2>
+                </header>
+
+                <div class="team-grid">
+                    <article class="team-card">
+                        <div class="team-image">
+                            <img src="./assets/images/trainer1.png" alt="Erica Silva - Personal Trainer" loading="lazy">
+                            <div class="team-overlay">
+                                <div class="team-social">
+                                    <a href="#" aria-label="Facebook da Erica Silva">
+                                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" aria-label="Instagram da Erica Silva">
+                                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" aria-label="LinkedIn da Erica Silva">
+                                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Erica Silva</h3>
+                            <p class="team-role">Personal Trainer Sênior</p>
+                            <p class="team-bio">Especialista em emagrecimento e condicionamento físico</p>
+                        </div>
+                    </article>
+
+                    <article class="team-card">
+                        <div class="team-image">
+                            <img src="./assets/images/trainer2.png" alt="Carlos Santos - Personal Trainer" loading="lazy">
+                            <div class="team-overlay">
+                                <div class="team-social">
+                                    <a href="#" aria-label="Facebook do Carlos Santos">
+                                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" aria-label="Instagram do Carlos Santos">
+                                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" aria-label="LinkedIn do Carlos Santos">
+                                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Carlos Santos</h3>
+                            <p class="team-role">Instrutor de CrossFit</p>
+                            <p class="team-bio">Especialista em treinamento funcional e alta performance</p>
+                        </div>
+                    </article>
+
+                    <article class="team-card">
+                        <div class="team-image">
+                            <img src="./assets/images/trainer3.png" alt="Ana Costa - Instrutora de Yoga" loading="lazy">
+                            <div class="team-overlay">
+                                <div class="team-social">
+                                    <a href="#" aria-label="Facebook da Ana Costa">
+                                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" aria-label="Instagram da Ana Costa">
+                                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" aria-label="LinkedIn da Ana Costa">
+                                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Ana Costa</h3>
+                            <p class="team-role">Instrutora de Yoga & Pilates</p>
+                            <p class="team-bio">Especialista em bem-estar mental e flexibilidade</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section class="contact" id="cadastro">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-subtitle">Entre em Contato</span>
+                    <h2 class="section-title">Comece sua jornada fitness hoje</h2>
+                    <p class="section-description">Preencha o formulário abaixo e nossa equipe entrará em contato para agendar sua visita gratuita.</p>
+                </header>
+
+                <div class="contact-content">
+                    <form class="contact-form" action="#" method="POST" novalidate>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">Nome *</label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" placeholder="Digite seu nome" required>
+                                <span class="form-error">Por favor, insira seu nome</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Sobrenome *</label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Digite seu sobrenome" required>
+                                <span class="form-error">Por favor, insira seu sobrenome</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">E-mail *</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required>
+                                <span class="form-error">Por favor, insira um e-mail válido</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Telefone *</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="(11) 99999-9999" required>
+                                <span class="form-error">Por favor, insira seu telefone</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Fale sobre seus objetivos fitness..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Quero receber novidades e ofertas por e-mail
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Enviar Mensagem</button>
+                    </form>
+
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Localização</h4>
+                                <p>Rua das Flores, 123<br>São Paulo - SP</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Telefone</h4>
+                                <p>(11) 99999-9999</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>E-mail</h4>
+                                <p>contato@fitlife.com.br</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Horário</h4>
+                                <p>24 horas por dia<br>7 dias por semana</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-
-    </section>
-
-    <!-- fim -->
-
-    <!-- cadastro -->
-
-    <section class="cadastro" id="cadastro">
-
-        <h1 class="heading">cadastro</h1>
-
-        <form action="">
-
-            <div class="inputBox">
-                <input type="text" placeholder="primeiro nome">
-                <input type="text" placeholder="último nome">
-            </div>
-
-            <div class="inputBox">
-                <input type="email" placeholder="email">
-                <input type="number" placeholder="celular">
-            </div>
-
-            <textarea name="" id="" cols="30" rows="10" placeholder="mensagem"></textarea>
-
-            <a href="#" class="btn">cadastrar</a>
-
-        </form>
-
-    </section>
+        </section>
+    </main>
 
     <!-- fim -->
 
@@ -330,74 +547,95 @@
 
     <section class="footer">
 
-        <div class="box-container">
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <a href="#home" class="footer-logo">
+                            <i class="fas fa-dumbbell" aria-hidden="true"></i>
+                            <span>FitLife</span>
+                        </a>
+                        <p class="footer-description">
+                            Transformando vidas através do fitness. 
+                            Mais que uma academia, somos sua família fitness.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Facebook da FitLife">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" aria-label="Instagram da FitLife">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter da FitLife">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" aria-label="LinkedIn da FitLife">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="box">
-                <h3><i class="fas fa-dumbbell"></i> fitness</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
+                <div class="footer-section">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#planos">Planos</a></li>
+                        <li><a href="#time">Equipe</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="#servicos">Musculação</a></li>
+                        <li><a href="#servicos">CrossFit</a></li>
+                        <li><a href="#servicos">Yoga & Pilates</a></li>
+                        <li><a href="#servicos">Personal Training</a></li>
+                        <li><a href="#servicos">Cardio</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>Rua das Flores, 123 - São Paulo, SP</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <span>contato@fitlife.com.br</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            <span>24h - 7 dias por semana</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="box">
-                <h3>contato</h3>
-                <a href="#"> <i class="fas fa-phone"></i> +55(11)98989-9999</a>
-                <a href="#"> <i class="fas fa-phone"></i> +55(11)98989-9999</a>
-                <a href="#"> <i class="fas fa-envelope"></i> ninjashub4@gmail.com</a>
-                <a href="#"> <i class="fas fa-map"></i> são paulo, brasil</a>
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2026 <span>FitLife Academia</span>. Todos os direitos reservados.
+                </p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
             </div>
-
-            <div class="box">
-                <h3>links rápidos</h3>
-                <a href="#"> <i class="fas fa-arrow-right"></i> home</a>
-                <a href="#"> <i class="fas fa-arrow-right"></i> sobre</a>
-                <a href="#"> <i class="fas fa-arrow-right"></i> servicos</a>
-                <a href="#"> <i class="fas fa-arrow-right"></i> planos</a>
-                <a href="#"> <i class="fas fa-arrow-right"></i> time</a>
-            </div>
-
-            <div class="box">
-                <h3>extra links</h3>
-                <a href="#"> <i class="fas fa-arrow-right"></i> politica de reembolso</a>
-                <a href="#"> <i class="fas fa-arrow-right"></i> minha conta</a>
-                <a href="#"> <i class="fas fa-arrow-right"></i> novos equipamentos</a>
-                <a href="#"> <i class="fas fa-arrow-right"></i> novas ofertas</a>
-                <a href="#"> <i class="fas fa-arrow-right"></i> treinadores</a>
-            </div>
-
         </div>
+    </footer>
 
-        <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-pinterest"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-            <a href="#" class="fab fa-instagram"></a>
-        </div>
-
-        <div class="credit">&copy; todos os direitos reservados ao <span>ninjashub</span></div>
-
-    </section>
-
-    <!-- fim -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- jquery  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- custom -->
+    <!-- JavaScript -->
     <script src="./assets/js/script.js"></script>
-
-
 </body>
-
 </html>
